@@ -5,7 +5,7 @@ Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 
 
 1.- Install Structure Dirs.
 
-G Drive (Install on any Drive: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
+Install on any Drive Letter: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
 ```
 G
 .
@@ -38,5 +38,6 @@ G
 
     Searches by adrres not working with Navigator4.0 of ExifToolGUI v5.16.0.0 ( window.XMLHttpRequest.name = undefined ).
  
- Enjoy.   
-                
+ Enjoy,
+ 
+ Copyright © March 2024 maura3g, Setiles, Spain.                
