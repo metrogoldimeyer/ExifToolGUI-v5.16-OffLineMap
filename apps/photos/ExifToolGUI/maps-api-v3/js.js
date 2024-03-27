@@ -1,4 +1,3 @@
-
 window.google = window.google || {};
 google.maps = google.maps || {};
 (function() {
@@ -93,7 +92,6 @@ function DownloadUrlNavigator4_OLD (url, callback) {
 	xhr.send();
 }
 
-
 /*
  * ExifToolGUI.html - google.maps.PlaceSearch(location, GotoLocation);
  *
@@ -117,12 +115,11 @@ google.maps.PlaceSearch = (function (address, callbak) {
 	var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + encodeURIComponent(address);
 
 	var ver = navigator.appVersion, ua  = navigator.userAgent, regex;
-	if (contains(ver,"Navigator4.0")) { // ExifToolGUI v5.16.0.0 Navigator
+	if (contains(ver,"Navigator4.0")) {					// ExifToolGUI v5.16.0.0 Navigator
 		alert("NavigatorVersion:\n" + ver + "\n\nuserAgent:\n" + ua);
-		// DownloadUrlNavigator4(url, callbak);
-
-		// ec.DownloadUrl(url, callbak, false, false); // NO va
-		PI(url, callbak, false, false); // util-formatter.js
+		DownloadUrlNavigator4(url, callbak);			// not working with Navigator4.0 of ExifToolGUI v5.16.0.0
+		// ec.DownloadUrl(url, callbak, false, false);	// not working with Navigator4.0 of ExifToolGUI v5.16.0.0
+		// PI(url, callbak, false, false);				// not working with Navigator4.0 of ExifToolGUI v5.16.0.0
 	}
 
 	if ( isValidLatAndLong(address) ) {
@@ -130,19 +127,13 @@ google.maps.PlaceSearch = (function (address, callbak) {
 		callbak(loc[0],loc[1]); // GotoLocation(lat,lon);
 	} else {
 		alert("GotoAddress: "+address);
-		// DownloadUrl(url, callbak);
-		// ec.aa(url, true, false, true);
-		// ec.DownloadUrl(url, callbak, false, "json");
-		// ec.DownloadUrl(url, callbak, false, true);
-		// ec.DownloadUrl(url, callbak, false, false);
-		// ec.DownloadUrl(url, callbak, false, false);
-
-
-		PI(url, callbak, false, false); // util-formatter.js
+		DownloadUrl(url, callbak);						// working with Chome Windows 7 - ExifToolGUI-maps-api-v3-1g.html
+		// ec.aa(url, true, false, true);				// working with Chome Windows 7 - ExifToolGUI-maps-api-v3-1g.html
+		// ec.DownloadUrl(url, callbak, false, false);	// working with Chome Windows 7 - ExifToolGUI-maps-api-v3-1g.html
+		// PI(url, callbak, false, false);				// working with Chome Windows 7 - ExifToolGUI-maps-api-v3-1g.html
 
 	}
 });
-
 
 /*
  * https://maps.googleapis.com/maps-api-v3/api/js/28/19/intl/es_ALL/zombie.js
@@ -239,10 +230,6 @@ function PI(url, callback, c, d) {
 	xhr.send(null)
 };
 
-
-
-
-
 /*
  * file:///F:/apps/photos/ExifToolGUI/maps-api-v3/api/js/28/19/intl/es_ALL/util.js
  */
@@ -283,9 +270,7 @@ var WG = function(a, b) {
         c.send(b.data || null)
     };
 
-
-
-//------------------------------------------------------------------------------
+//--- /mgm ---------------------------------------------------------------------
 
 var modules = google.maps.modules = {};
 google.maps.__gjsload__ = function(name, text) {
@@ -367,30 +352,19 @@ null, null, null, "https://maps.google.com"],
 var loadScriptTime = (new Date).getTime();
 
 
-// getScript("maps-api-v3/api/js/28/19/intl/es_ALL/zombie.js"); // DownloadUrl
-// getScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js");
 getScript("maps-api-v3/api/js/9/20/intl/es_ALL/jquery.min.js");
-// getScript("maps-api-v3/api/js/9/20/intl/es_ALL/jquery.min-formatter.js");
 
-// getScript("https://nominatim.openstreetmap.org/search?format=json&limit=3&q=roma");
-
-
-// getScript("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js");
-// getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
-
-
-// maps-api-v3/api/js/9/20/intl/es_ALL/main.js
 var Script="maps-api-v3/api/js/9/20/intl/es_ALL/main.js";
 getScript(Script);
 
-getScript("maps-api-v3/api/js/9/20/intl/es_ALL/places.js");
+// getScript("maps-api-v3/api/js/9/20/intl/es_ALL/places.js");
 
-// HOST NO va con ExifToolGUI-maps-api-v3-1b-OK.exe
+// HOST not working with Navigator4.0 of ExifToolGUI v5.16.0.0
 var HOST = unescape(window.location.href.substring(0,(window.location.href.lastIndexOf("/"))+1)); // file:///D:/apps...
 if (HOST) {
 	var URL=HOST+Script;
 } else {
 	var URL="file:///< C | D | E | ..>:/apps/photos/ExifToolGUI/"+Script;
 }
-alert('maura3g: maps-api-v3/js.js -> '+URL);
+alert('mgm: maps-api-v3/js.js -> '+URL);
 })();
