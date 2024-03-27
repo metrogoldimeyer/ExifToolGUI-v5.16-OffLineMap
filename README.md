@@ -25,6 +25,17 @@ G
       +--msys64
          +--usr
             +--bin
+
+| [root]
+|── config
+    |── data
+    |── helpers
+    |── layouts
+    |── less
+    |── partials
+|── docs
+| assemblefile.js
+| package.json
                 
 2.- Execute: ExifToolGUI-maps-api-v3-1g-Change-DriveLetter.cmd to change installation drive (Not necessary for G drive installations).
 3.- Open ExifToolGUI-maps-api-v3-1g.html on Chrome ( Searches by lat,lon or adrres, Example: 40.734190,-1.617200 or Setiles ).
