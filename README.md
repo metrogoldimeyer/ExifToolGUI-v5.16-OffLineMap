@@ -1,5 +1,5 @@
-# ExifToolGUI-v5.16-OffLineMap
-ExifToolGUI v5.16 - A Graphical User Interface for the ExifTool with OffLine map (rewrite March 2024).
+# ExifToolGUI-v5.16-OffLine-API-v3-map
+ExifToolGUI v5.16 - A Graphical User Interface for the ExifTool with OffLine API v3 map (rewrite March 2024).
 
 Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 109.0.5414.120 (Official Build) (64-bit).
 
