@@ -7,8 +7,9 @@ Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 
 G Drive (Install on any Drive: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
 
 G
+.
 +--apps
-   +--photos
+  +--photos
    |  +--ExifToolGUI
    |     +--maps-api-v3
    |        +--api
@@ -26,16 +27,13 @@ G
          +--usr
             +--bin
 
-| [root]
-|── config
-    |── data
-    |── helpers
-    |── layouts
-    |── less
-    |── partials
-|── docs
-| assemblefile.js
-| package.json
+├── bin
+│   ├── Debug
+│   │   ├── SampleLibrary.jar
+│   │   ├── cooper.jar
+│   │   ├── sugar.data.jar
+│   │   ├── sugar.jar
+│   │   └── swift.jar
                 
 2.- Execute: ExifToolGUI-maps-api-v3-1g-Change-DriveLetter.cmd to change installation drive (Not necessary for G drive installations).
 3.- Open ExifToolGUI-maps-api-v3-1g.html on Chrome ( Searches by lat,lon or adrres, Example: 40.734190,-1.617200 or Setiles ).
