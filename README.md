@@ -5,24 +5,25 @@ Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 
 
 1.- Install Structure Dirs.
 G:. Drive (Install on any Drive: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
-└───apps
-    ├───photos
-    │   └───ExifToolGUI
-    │       └───maps-api-v3
-    │           ├───api
-    │           │   └───js
-    │           │       └───9
-    │           │           └───20
-    │           │               └───intl
-    │           │                   └───es_ALL
-    │           └───mapfiles
-    │               ├───ms
-    │               │   └───micons
-    │               └───mv
-    └───unix
-        └───msys64
-            └───usr
-                └───bin
+G:.
++--apps
+   +--photos
+   │  +--ExifToolGUI
+   │     +--maps-api-v3
+   │        +--api
+   │        │  +--js
+   │        │     +--9
+   │        │        +--20
+   │        │           +--intl
+   │        │              +--es_ALL
+   │        +--mapfiles
+   │           +--ms
+   │           │  +--micons
+   │           +--mv
+   +--unix
+      +--msys64
+         +--usr
+            +--bin
                 
 2.- Execute: ExifToolGUI-maps-api-v3-1g-Change-DriveLetter.cmd to change installation drive (Not necessary for G drive installations).
 3.- Open ExifToolGUI-maps-api-v3-1g.html on Chrome ( Searches by lat,lon or adrres, Example: 40.734190,-1.617200 or Setiles ).
