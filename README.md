@@ -1,7 +1,7 @@
-# ExifToolGUI v5.16 with OffLine google API v3 & OnLine google maps
-ExifToolGUI v5.16 - A Graphical User Interface for the ExifTool with OffLine google API v3 & OnLine google maps (rewrite March 2024).
+# ExifToolGUI v5.16 with OffLine api v3 & OnLine maps
+ExifToolGUI v5.16 - A Graphical User Interface for the ExifTool with OffLine api v3 & OnLine maps (rewrite March 2024).
 
-Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 109.0.5414.120 (Official Build) (64-bit).
+Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Chrome Version 109.0.5414.120 (Official Build) (64-bit).
 
 1.- Install Structure Dirs.
 
