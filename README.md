@@ -34,10 +34,36 @@ G
 
 3.- Open ExifToolGUI-maps-api-v3-1g.html on Chrome ( Searches by lat,lon or adrres, Example: 40.734190,-1.617200 or Setiles ).
 
-4.- Execute: ExifToolGUI-maps-api-v3-1g.exe ( Searches only by lat,lon Example: 40.734190,-1.617200 ).
+4.- Execute: ExifToolGUI-maps-api-v3-1g.exe ( Find: lat,lon - Example Find: 40.734190,-1.617200).
 
-    Searches by adrres not working with Navigator4.0 of ExifToolGUI v5.16.0.0 ( window.XMLHttpRequest.name = undefined ).
+    Find: by adrres - Example Find: Setiles - Not working with Navigator4.0 of ExifToolGUI v5.16.0.0 ( window.XMLHttpRequest.name = undefined ).
+
+    Alternative: search by address in ExifToolGUI-maps-api-v3-1g.html open with Chrome, copy lat,lon and paste into the Find field:
+
+ 5.- I request help: Does anyone know how to get lot,lon from an address in Navigator 4.0 of ExifToolGUI v5.16.0.0
+
+ var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + encodeURIComponent('Setiles');
+ DownloadUrl (url, callback);
+
+ /*
+  * OK in Chrome
+  * 
+  * ERROR in Navigator 4.0 of ExifToolGUI v5.16.0.0 ( window.XMLHttpRequest.name = undefined )
+  */
+ function DownloadUrl (url, callback) {
+	var xhr = (window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP"));
+	xhr.open("GET", url, true);
+	xhr.responseType = 'json';
+	xhr.addEventListener('load', function (event) {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+		  if (xhr.response && xhr.response[0]) {
+			  callback(xhr.response[0].lat, xhr.response[0].lon);
+		  }
+		}
+	});
+	xhr.send();
+}
+
+Enjoy,
  
- Enjoy,
- 
- Copyright © March 2024 maura3g, Setiles, Spain.                
+Copyright © March 2024 maura3g, Setiles, Spain.                
