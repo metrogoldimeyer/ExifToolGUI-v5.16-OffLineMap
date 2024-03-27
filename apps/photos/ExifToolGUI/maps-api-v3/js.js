@@ -179,7 +179,7 @@ var ec = {
 
 		c ? (xhr.open("POST", url, !0),
 		(a = e) || (a = "application/x-www-form-urlencoded"), xhr.setRequestHeader("Content-Type", a),
-		// xhr.open(method <"GET" | "POST">, URL, [async (false=asincrónica), user, password])
+		// xhr.open(method <"GET" | "POST">, URL, [async (false=asincrÃ³nica), user, password])
 		xhr.send(c)) : ( xhr.open("GET", url, !0), xhr.send(null) );
 		return !0
 	},
@@ -332,7 +332,8 @@ null, null, null, "https://maps.google.com"],
 ["maps-api-v3/api/js/9/20/intl/es_ALL", "3.9.19"], [4290248692], 1, null, null, null, null, null, "", null, null, 1,
 			
 //"https://khms.googleapis.com/mz?v=158\u0026", null, "https://earthbuilder.googleapis.com", "https://earthbuilder.googleapis.com", null,
-"https://khms.googleapis.com/mz?v=158\u0026", "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg",
+// "https://khms.googleapis.com/mz?v=158\u0026", "KEY",
+"https://khms.googleapis.com/mz?v=158\u0026", null,
 // "https://khms.googleapis.com/mz?v=158\u0026", "",
 	 
  "https://earthbuilder.googleapis.com", "https://earthbuilder.googleapis.com", null,
