@@ -4,22 +4,23 @@ ExifToolGUI v5.16 - A Graphical User Interface for the ExifTool with OffLine map
 Tested on Windows 7 Pro x64 Update August 2018 iso MSDL & Google Chrome Version 109.0.5414.120 (Official Build) (64-bit).
 
 1.- Install Structure Dirs.
-G:. Drive (Install on any Drive: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
-G:.
+G Drive (Install on any Drive: < C | D | E | F | G | H | I | J | K | L | N | M | O | P | Q | R | S | T | U | V | W | X | Y | Z >  (Default G).
+
+G
 +--apps
    +--photos
-   │  +--ExifToolGUI
-   │     +--maps-api-v3
-   │        +--api
-   │        │  +--js
-   │        │     +--9
-   │        │        +--20
-   │        │           +--intl
-   │        │              +--es_ALL
-   │        +--mapfiles
-   │           +--ms
-   │           │  +--micons
-   │           +--mv
+   |  +--ExifToolGUI
+   |     +--maps-api-v3
+   |        +--api
+   |        |  +--js
+   |        |     +--9
+   |        |        +--20
+   |        |           +--intl
+   |        |              +--es_ALL
+   |        +--mapfiles
+   |           +--ms
+   |           |  +--micons
+   |           +--mv
    +--unix
       +--msys64
          +--usr
