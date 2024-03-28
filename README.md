@@ -40,6 +40,10 @@ G
 
     Alternative: search by address in ExifToolGUI-maps-api-v3-1g.html open with Chrome, copy lat,lon and paste into the Find field:
 
+ ExifToolGUI html and exe screenshot image.
+ 
+![ExifToolGUI html and exe screenshot image](./apps/photos/ExifToolGUI/help/ExifToolGUI-maps-api-v3-1g-2x3.jpg)
+
  5.- I request help: Does anyone know how to get lot,lon from an address in Navigator 4.0 of ExifToolGUI v5.16.0.0
 ```
  var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + encodeURIComponent('Setiles');
