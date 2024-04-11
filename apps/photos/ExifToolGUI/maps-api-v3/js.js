@@ -2,9 +2,10 @@ window.google = window.google || {};
 google.maps = google.maps || {};
 (function() {
 
-//--- 20240402 mgm -------------------------------------------------------------
+//--- 20240411 mgm -------------------------------------------------------------
 
 var DEBUG = !1;
+var address_query;
 
 function getScript(src) {
 	document.write('<' + 'script type="text/javascript" charset="UTF-8" src="' + src + '"><' + '/script>');
@@ -25,7 +26,7 @@ function contains(masterString, subString) {
 }
 
 function isValidLatAndLong(coordinates){
-	return /^(-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}),\s*(-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6})$/.test(coordinates);
+	return /^(-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6})\s*,\s*(-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6})$/.test(coordinates);
 }
 
 google.maps.jsonData = (function (data) {
@@ -34,6 +35,10 @@ google.maps.jsonData = (function (data) {
 });
 
 function DownloadUrlNavigator4 (url, callback) {
+	if (!data || !data[0]) {
+		alert("Geocoding '"+address_query+"' failed.");
+		return !1;
+	}	
 	if (DEBUG) {  alert("DownloadUrlNavigator4"); }
 	CreateJsonScript(url);
 }
@@ -58,6 +63,7 @@ google.maps.PlaceSearch = (function (address, callback) {
 	if (isEmptyOrSpaces(address)) {
 		return !0;
 	}
+	address_query = address;
 	var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + encodeURIComponent(address) + "&json_callback=google.maps.jsonData";
 	var ver = navigator.appVersion, ua  = navigator.userAgent, regex;
 
