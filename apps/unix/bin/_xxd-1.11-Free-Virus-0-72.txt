@@ -1,0 +1,15 @@
+202400415 - _xxd-1.11_win32(static)_Windows-Free-Virus-0-72
+
+
+https://sourceforge.net/projects/xxd-for-windows/
+
+https://sourceforge.net/projects/xxd-for-windows/files/latest/download
+
+--- https://www.virustotal.com/gui/file/810620b87b1009f5dc5bdb95b3286e40ff18d6fce19591bda1a13ff6ae5b618b
+
+0 / 72
+Reanalyze
+810620b87b1009f5dc5bdb95b3286e40ff18d6fce19591bda1a13ff6ae5b618b
+xxd.exe Size 55.00 KB
+
+---

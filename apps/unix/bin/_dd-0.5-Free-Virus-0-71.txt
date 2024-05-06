@@ -1,0 +1,16 @@
+20240415 - dd-0.5.zip - Virus 0-71
+
+--- https://serverspace.io/support/help/dd-utility-for-windows-backup/
+
+--- dd-0.5.zip - https://disk.yandex.ru/d/dq3StQ_UJ_MGsA
+
+
+--- https://www.virustotal.com/gui/file/2f3d16ef80d336ff1d270af9c101443a6426600b6d7c6506d984cdbdc7c6e8f9
+
+0 / 71
+
+Reanalyze
+2f3d16ef80d336ff1d270af9c101443a6426600b6d7c6506d984cdbdc7c6e8f9
+dd.exe Size 334.00 KB
+
+---
